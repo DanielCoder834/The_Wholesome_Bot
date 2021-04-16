@@ -3,8 +3,9 @@
 
 const gif = require("./commands/gif.js");
 const hello = require("./commands/hello.js");
+const play = require("./commands/play.js"); 
 
-const commands = { hello, gif };
+const commands = { hello, gif, play };
 
 module.exports = async function (msg) {
   if (msg.channel.id == '823622800736124958' || msg.channel.id == '823895207556415518') {
@@ -19,7 +20,7 @@ module.exports = async function (msg) {
       }
     }
     catch (e) {
-      console.log(e);
+        msg.reply("\nInvalid Command or Error!!!!\n" + "Try Using:\n" + "!hello\n" + "!gif\n" + "!play\n");
     }
   }
 }

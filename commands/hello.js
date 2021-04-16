@@ -1,4 +1,4 @@
-//msg.reply('Have I been summoned?');
+
 const replies = [ 'Have I been summoned?', 'Why Hello There', 'Wwwwassssuuuppp','Hey 😀', '👋' ];
 
 module.exports = function(msg, args)
